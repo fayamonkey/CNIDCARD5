@@ -2,10 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['claudenation.org'], // Add any domains here that will host images
+    domains: [],
+    remotePatterns: [],
   },
-  // This setting enables using static exports for GitHub Pages if needed
-  output: process.env.EXPORT_MODE === 'static' ? 'export' : undefined,
+  // Output static exports for GitHub Pages if needed
+  // output: process.env.EXPORT_MODE === 'static' ? 'export' : undefined,
 }
 
 module.exports = nextConfig 
